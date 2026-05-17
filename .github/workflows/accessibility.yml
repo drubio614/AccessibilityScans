@@ -1,4 +1,3 @@
-yaml
 name: Accessibility Scans
 
 on:
@@ -30,4 +29,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: accessibility-results
-        path: **/TestResults/*.trx
+        path: TestResults
