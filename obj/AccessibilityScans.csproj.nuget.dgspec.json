@@ -1,0 +1,107 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\rubi1dou\\Documents\\Axe-core\\accessibilityscans\\AccessibilityScans\\AccessibilityScans.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rubi1dou\\Documents\\Axe-core\\accessibilityscans\\AccessibilityScans\\AccessibilityScans.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rubi1dou\\Documents\\Axe-core\\accessibilityscans\\AccessibilityScans\\AccessibilityScans.csproj",
+        "projectName": "AccessibilityScans",
+        "projectPath": "C:\\Users\\rubi1dou\\Documents\\Axe-core\\accessibilityscans\\AccessibilityScans\\AccessibilityScans.csproj",
+        "packagesPath": "C:\\Users\\rubi1dou\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rubi1dou\\Documents\\Axe-core\\accessibilityscans\\AccessibilityScans\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rubi1dou\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1605"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Deque.AxeCore.Commons": {
+              "target": "Package",
+              "version": "[4.11.3, )"
+            },
+            "Deque.AxeCore.Selenium": {
+              "target": "Package",
+              "version": "[4.11.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.319/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
