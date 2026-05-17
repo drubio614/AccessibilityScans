@@ -120,7 +120,7 @@ namespace AccessibilityScans
             return sb.ToString();
         }
 
-        // --- Helpers that tolerate different runtime shapes
+        // --- Helpers that tolerate different runtime shapes.
 
         private static string GetPropString(object obj, string propName)
         {
