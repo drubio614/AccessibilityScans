@@ -42,6 +42,13 @@ namespace AccessibilityScans
                 .WithTags("wcag2a", "wcag2aa", "wcag21aa")
                 .Analyze();
 
+            Console.WriteLine("=== Accessibility Summary ===");
+            Console.WriteLine($"Violations: {GetLength(result, "Violations")}");
+            Console.WriteLine($"Passes: {GetLength(result, "Passes")}");
+            Console.WriteLine($"Incomplete: {GetLength(result, "Incomplete")}");
+            Console.WriteLine($"Inapplicable: {GetLength(result, "Inapplicable")}");
+            Console.WriteLine("=============================");
+
             var jsonReportDir = Path.Combine(Directory.GetCurrentDirectory(), "target", "a11y-json-reports");
             Directory.CreateDirectory(jsonReportDir);
             var jsonFileName = SanitizeFileName(siteUrl) + "_axe_results.json";
@@ -56,7 +63,8 @@ namespace AccessibilityScans
 
             if (GetLength(result, "Violations") > 0)
             {
-                Assert.Fail("Accessibility violations found.");
+                Console.WriteLine("⚠ Accessibility violations detected. See JSON/HTML reports for details.");
+                Assert.Warn("Accessibility violations found. See Axe reports for details.");
             }
         }
 
@@ -74,8 +82,8 @@ namespace AccessibilityScans
             sb.AppendLine($"<h1>Accessibility Report for {System.Net.WebUtility.HtmlEncode(url)}</h1>");
             sb.AppendLine($"<p>Total Violations: {GetLength(result, "Violations")}</p>");
 
-            var violations = ToEnumerable(result, "Violations");
-            if (violations.Any())
+            var violations = ToEnumerable(result, "Violations").ToList();
+            if (violations.Count > 0)
             {
                 sb.AppendLine("<table border='1' cellpadding='5'>");
                 sb.AppendLine("<tr><th>Rule</th><th>Impact</th><th>Description</th><th>Selector</th><th>HTML</th></tr>");

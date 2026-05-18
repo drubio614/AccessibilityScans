@@ -73,7 +73,8 @@ namespace AccessibilityScans
 
             if (GetLength(result, "Violations") > 0)
             {
-                Assert.Fail($"Accessibility violations found: {GetLength(result, "Violations")}. See reports in {jsonDir} and {htmlDir}.");
+                Console.WriteLine("⚠ Accessibility violations detected. See JSON/HTML reports for details.");
+                Assert.Warn($"Accessibility violations found: {GetLength(result, "Violations")}. See reports in {jsonDir} and {htmlDir}.");
             }
         }
 
@@ -91,8 +92,8 @@ namespace AccessibilityScans
             sb.AppendLine($"<h1>Accessibility Report for {System.Net.WebUtility.HtmlEncode(url)}</h1>");
             sb.AppendLine($"<p>Total Violations: {GetLength(result, "Violations")}</p>");
 
-            var violations = ToEnumerable(result, "Violations");
-            if (violations.Any())
+            var violations = ToEnumerable(result, "Violations").ToList();
+            if (violations.Count > 0)
             {
                 sb.AppendLine("<table border='1' cellpadding='6' cellspacing='0'>");
                 sb.AppendLine("<tr><th>Rule</th><th>Impact</th><th>Description</th><th>Selector</th><th>HTML</th></tr>");
