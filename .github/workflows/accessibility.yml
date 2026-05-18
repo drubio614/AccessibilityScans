@@ -14,15 +14,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Firefox (Mozilla binary)
+      - name: Install Firefox (Mozilla APT Repository)
         run: |
+          sudo add-apt-repository ppa:mozillateam/ppa -y
+          echo '
+          Package: *
+          Pin: release o=LP-PPA-mozillateam
+          Pin-Priority: 1001
+          ' | sudo tee /etc/apt/preferences.d/mozilla-firefox
           sudo apt-get update
-          sudo apt-get install -y wget
-          FIREFOX_URL=$(wget -qO- https://ftp.mozilla.org/pub/firefox/releases/latest/linux-x86_64/en-US/ | grep -oP 'href="firefox-[^"]+\.tar\.bz2"' | head -1 | cut -d'"' -f2)
-          wget "https://ftp.mozilla.org/pub/firefox/releases/latest/linux-x86_64/en-US/$FIREFOX_URL" -O firefox.tar.bz2
-          tar -xjf firefox.tar.bz2
-          sudo mv firefox /opt/firefox
-          sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
+          sudo apt-get install -y firefox
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
