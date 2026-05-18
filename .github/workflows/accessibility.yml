@@ -18,7 +18,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y wget
-          wget https://ftp.mozilla.org/pub/firefox/releases/latest/linux-x86_64/en-US/firefox-*.tar.bz2 -O firefox.tar.bz2
+          FIREFOX_URL=$(wget -qO- https://ftp.mozilla.org/pub/firefox/releases/latest/linux-x86_64/en-US/ | grep -oP 'href="firefox-[^"]+\.tar\.bz2"' | head -1 | cut -d'"' -f2)
+          wget "https://ftp.mozilla.org/pub/firefox/releases/latest/linux-x86_64/en-US/$FIREFOX_URL" -O firefox.tar.bz2
           tar -xjf firefox.tar.bz2
           sudo mv firefox /opt/firefox
           sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
