@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AccessibilityScans")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd9ef04cedd401c24e87777c575dd7ab7c76a3d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("AccessibilityScans")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AccessibilityScans")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

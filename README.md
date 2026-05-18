@@ -1,4 +1,4 @@
-# AccessibilityScans (.NET 8 + Axe + Selenium + Firefox)
+# AccessibilityScans. (.NET 8 + Axe + Selenium + Firefox)
 
 ## Quick setup (one-time per machine))
 1. Ensure .NET 8 SDK is installed.

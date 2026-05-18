@@ -21,7 +21,7 @@ namespace AccessibilityScans
             var options = new FirefoxOptions();
             options.AddArgument("--width=1920");
             options.AddArgument("--height=1080");
-            options.AddArgument("--headless"); // REQUIRED FOR GITHUB ACTIONS
+            //options.AddArgument("--headless"); // REQUIRED FOR GITHUB ACTIONS
 
             driver = new FirefoxDriver(options);
         }

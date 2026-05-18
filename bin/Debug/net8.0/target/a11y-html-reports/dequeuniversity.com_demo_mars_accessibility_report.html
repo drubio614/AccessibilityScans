@@ -1,0 +1,194 @@
+<html><head><meta charset='utf-8'><title>A11y Report</title></head><body>
+<h1>Accessibility Report for https://dequeuniversity.com/demo/mars</h1>
+<p>Total Violations: 9</p>
+<table border='1' cellpadding='5'>
+<tr><th>Rule</th><th>Impact</th><th>Description</th><th>Selector</th><th>HTML</th></tr>
+<tr>
+<td>aria-prohibited-attr</td>
+<td>serious</td>
+<td>Ensure ARIA attributes are not prohibited for an element&#39;s role</td>
+<td>[&quot;#player&quot;, &quot;#movie_player&quot;]</td>
+<td><pre style='white-space:pre-wrap'>&lt;div class=&quot;html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode&quot; tabindex=&quot;&quot; id=&quot;movie_player&quot; data-version=&quot;/s/player/e1bd44b2/player_embed_es6.vflset/en_US/base.js&quot; aria-label=&quot;YouTube Video Player&quot;&gt;</pre></td>
+</tr>
+<tr>
+<td>button-name</td>
+<td>critical</td>
+<td>Ensure buttons have discernible text</td>
+<td>.departure-date &gt; .ui-datepicker-trigger:nth-child(4)</td>
+<td><pre style='white-space:pre-wrap'>&lt;button class=&quot;ui-datepicker-trigger&quot; type=&quot;button&quot;&gt;
+&lt;!-- &lt;img title=&quot;...&quot; alt=&quot;...&quot; src=&quot;/redesign/assets/demo-sites/mars/images/calendar.png&quot;&gt; --&gt;
+&lt;/button&gt;</pre></td>
+</tr>
+<tr>
+<td>color-contrast</td>
+<td>serious</td>
+<td>Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds</td>
+<td>a[href=&quot;mars2.html?a=be_bold&quot;] &gt; h3</td>
+<td><pre style='white-space:pre-wrap'>&lt;h3&gt;Be Bold...&lt;/h3&gt;</pre></td>
+</tr>
+<tr>
+<td>color-contrast</td>
+<td>serious</td>
+<td>Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds</td>
+<td>#vap-plan &gt; p:nth-child(3)</td>
+<td><pre style='white-space:pre-wrap'>&lt;p&gt;Step out of your comfort zone, and into a rocket with enough fuel to blast a Manhattan-sized crater if it explodes. But it won&#39;t. Probably.&lt;br&gt;
+&amp;nbsp; &lt;/p&gt;</pre></td>
+</tr>
+<tr>
+<td>color-contrast</td>
+<td>serious</td>
+<td>Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds</td>
+<td>a[href=&quot;mars2.html?a=countdown&quot;] &gt; h3</td>
+<td><pre style='white-space:pre-wrap'>&lt;h3&gt;Countdown...&lt;/h3&gt;</pre></td>
+</tr>
+<tr>
+<td>color-contrast</td>
+<td>serious</td>
+<td>Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds</td>
+<td>#vap-book &gt; p:nth-child(3)</td>
+<td><pre style='white-space:pre-wrap'>&lt;p&gt;If you&#39;re serious about traveling to Mars - really serious - then &lt;a href=&quot;mars2.html?a=last_will&quot;&gt;prepare your last will and testament&lt;/a&gt;, and book a trip! &lt;/p&gt;</pre></td>
+</tr>
+<tr>
+<td>color-contrast</td>
+<td>serious</td>
+<td>Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds</td>
+<td>a[href=&quot;mars2.html?a=blast_off&quot;] &gt; h3</td>
+<td><pre style='white-space:pre-wrap'>&lt;h3&gt;Blast Off!&lt;/h3&gt;</pre></td>
+</tr>
+<tr>
+<td>color-contrast</td>
+<td>serious</td>
+<td>Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds</td>
+<td>#vap-travel &gt; p:nth-child(3)</td>
+<td><pre style='white-space:pre-wrap'>&lt;p&gt;Expect violent turbulence, bone-crushing g-forces, muscle atrophy, and certain death (hey, everyone&#39;s death is certain at some point, right?).&lt;br&gt;
+&amp;nbsp; &lt;/p&gt;</pre></td>
+</tr>
+<tr>
+<td>frame-title</td>
+<td>serious</td>
+<td>Ensure &lt;iframe&gt; and &lt;frame&gt; elements have an accessible name</td>
+<td>#fafbba78</td>
+<td><pre style='white-space:pre-wrap'>&lt;iframe id=&quot;fafbba78&quot; name=&quot;f2bc5e72d&quot; scrolling=&quot;no&quot; style=&quot;border: none; overflow: hidden; height: 62px; width: 292px;&quot; class=&quot;fb_ltr&quot; src=&quot;/assets/demo-sites/mars/js/likebox.html&quot;&gt;&lt;/iframe&gt;</pre></td>
+</tr>
+<tr>
+<td>html-has-lang</td>
+<td>serious</td>
+<td>Ensure every HTML document has a lang attribute</td>
+<td>html</td>
+<td><pre style='white-space:pre-wrap'>&lt;html class=&quot; js no-flexbox flexb...&quot;&gt;</pre></td>
+</tr>
+<tr>
+<td>image-alt</td>
+<td>critical</td>
+<td>Ensure &lt;img&gt; elements have alternative text or a role of none or presentation</td>
+<td>img[src$=&quot;seg&quot;]</td>
+<td><pre style='white-space:pre-wrap'>&lt;img src=&quot;/assets/demo-sites/mars/js/seg&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;</pre></td>
+</tr>
+<tr>
+<td>image-alt</td>
+<td>critical</td>
+<td>Ensure &lt;img&gt; elements have alternative text or a role of none or presentation</td>
+<td>li:nth-child(1) &gt; a[href=&quot;mars2.html?a=crater_adventure&quot;] &gt; img[width=&quot;210&quot;][height=&quot;120&quot;]</td>
+<td><pre style='white-space:pre-wrap'>&lt;img src=&quot;/assets/demo-sites/mars/images/mars-spaceman.jpg&quot; class=&quot;&quot; width=&quot;210&quot; height=&quot;120&quot;&gt;</pre></td>
+</tr>
+<tr>
+<td>image-alt</td>
+<td>critical</td>
+<td>Ensure &lt;img&gt; elements have alternative text or a role of none or presentation</td>
+<td>li:nth-child(8) &gt; a[href=&quot;mars2.html?a=crater_adventure&quot;] &gt; img[width=&quot;210&quot;][height=&quot;120&quot;]</td>
+<td><pre style='white-space:pre-wrap'>&lt;img src=&quot;/assets/demo-sites/mars/images/mars-spaceman.jpg&quot; class=&quot;&quot; width=&quot;210&quot; height=&quot;120&quot;&gt;</pre></td>
+</tr>
+<tr>
+<td>image-alt</td>
+<td>critical</td>
+<td>Ensure &lt;img&gt; elements have alternative text or a role of none or presentation</td>
+<td>li:nth-child(15) &gt; a[href=&quot;mars2.html?a=crater_adventure&quot;] &gt; img[width=&quot;210&quot;][height=&quot;120&quot;]</td>
+<td><pre style='white-space:pre-wrap'>&lt;img src=&quot;/assets/demo-sites/mars/images/mars-spaceman.jpg&quot; class=&quot;&quot; width=&quot;210&quot; height=&quot;120&quot;&gt;</pre></td>
+</tr>
+<tr>
+<td>link-in-text-block</td>
+<td>serious</td>
+<td>Ensure links are distinguished from surrounding text in a way that does not rely on color</td>
+<td>a[href=&quot;mars2.html?a=last_will&quot;]</td>
+<td><pre style='white-space:pre-wrap'>&lt;a href=&quot;mars2.html?a=last_will&quot;&gt;prepare your last will and testament&lt;/a&gt;</pre></td>
+</tr>
+<tr>
+<td>link-name</td>
+<td>serious</td>
+<td>Ensure links have discernible text</td>
+<td>.link[href$=&quot;mars/#&quot;]</td>
+<td><pre style='white-space:pre-wrap'>&lt;a class=&quot;link&quot; href=&quot;demo/mars/#&quot;&gt;&lt;i class=&quot;icon-menu-home&quot;&gt;&lt;/i&gt;&lt;/a&gt;</pre></td>
+</tr>
+<tr>
+<td>link-name</td>
+<td>serious</td>
+<td>Ensure links have discernible text</td>
+<td>li:nth-child(1) &gt; a[href=&quot;mars2.html?a=crater_adventure&quot;]</td>
+<td><pre style='white-space:pre-wrap'>&lt;a href=&quot;mars2.html?a=crater_adventure&quot;&gt;
+&lt;img src=&quot;/assets/demo-sites/mars/images/mars-spaceman.jpg&quot; class=&quot;&quot; width=&quot;210&quot; height=&quot;120&quot;&gt;&lt;/a&gt;</pre></td>
+</tr>
+<tr>
+<td>link-name</td>
+<td>serious</td>
+<td>Ensure links have discernible text</td>
+<td>li:nth-child(8) &gt; a[href=&quot;mars2.html?a=crater_adventure&quot;]</td>
+<td><pre style='white-space:pre-wrap'>&lt;a href=&quot;mars2.html?a=crater_adventure&quot;&gt;
+&lt;img src=&quot;/assets/demo-sites/mars/images/mars-spaceman.jpg&quot; class=&quot;&quot; width=&quot;210&quot; height=&quot;120&quot;&gt;&lt;/a&gt;</pre></td>
+</tr>
+<tr>
+<td>link-name</td>
+<td>serious</td>
+<td>Ensure links have discernible text</td>
+<td>li:nth-child(15) &gt; a[href=&quot;mars2.html?a=crater_adventure&quot;]</td>
+<td><pre style='white-space:pre-wrap'>&lt;a href=&quot;mars2.html?a=crater_adventure&quot;&gt;
+&lt;img src=&quot;/assets/demo-sites/mars/images/mars-spaceman.jpg&quot; class=&quot;&quot; width=&quot;210&quot; height=&quot;120&quot;&gt;&lt;/a&gt;</pre></td>
+</tr>
+<tr>
+<td>link-name</td>
+<td>serious</td>
+<td>Ensure links have discernible text</td>
+<td>.re_ajax_p3 &gt; a[href=&quot;mars2.html?a=&quot;]</td>
+<td><pre style='white-space:pre-wrap'>&lt;a href=&quot;mars2.html?a=&quot;&gt;&lt;/a&gt;</pre></td>
+</tr>
+<tr>
+<td>link-name</td>
+<td>serious</td>
+<td>Ensure links have discernible text</td>
+<td>.active</td>
+<td><pre style='white-space:pre-wrap'>&lt;a target=&quot;player&quot; data-text=&quot;Life was possible on Mars&quot; class=&quot;fader first active&quot; href=&quot;http://www.youtube.com/embed/OagLGti_hTE?controls=1&amp;amp;showinfo=1&amp;amp;modestbranding=0&amp;amp;wmode=opaque&amp;amp;enablejsapi=1&quot; id=&quot;default&quot;&gt;&lt;/a&gt;</pre></td>
+</tr>
+<tr>
+<td>link-name</td>
+<td>serious</td>
+<td>Ensure links have discernible text</td>
+<td>a[data-text=&quot;Why Mars died&quot;]</td>
+<td><pre style='white-space:pre-wrap'>&lt;a target=&quot;player&quot; data-text=&quot;Why Mars died&quot; class=&quot;fader first&quot; href=&quot;http://www.youtube.com/embed/oC31pqk9sak?controls=1&amp;amp;showinfo=1&amp;amp;modestbranding=0&amp;amp;wmode=opaque&amp;amp;enablejsapi=1&quot; id=&quot;default&quot;&gt;&lt;/a&gt;</pre></td>
+</tr>
+<tr>
+<td>link-name</td>
+<td>serious</td>
+<td>Ensure links have discernible text</td>
+<td>a[data-text=&quot;The world that never was&quot;]</td>
+<td><pre style='white-space:pre-wrap'>&lt;a target=&quot;player&quot; data-text=&quot;The world that never was&quot; class=&quot;fader first&quot; href=&quot;http://www.youtube.com/embed/JgMXPXdqJn8?controls=1&amp;amp;showinfo=1&amp;amp;modestbranding=0&amp;amp;wmode=opaque&amp;amp;enablejsapi=1&quot; id=&quot;default&quot;&gt;&lt;/a&gt;</pre></td>
+</tr>
+<tr>
+<td>select-name</td>
+<td>critical</td>
+<td>Ensure select element has an accessible name</td>
+<td>#time0</td>
+<td><pre style='white-space:pre-wrap'>&lt;select name=&quot;time0&quot; id=&quot;time0&quot; class=&quot;select-time&quot; tabindex=&quot;4&quot;&gt;</pre></td>
+</tr>
+<tr>
+<td>select-name</td>
+<td>critical</td>
+<td>Ensure select element has an accessible name</td>
+<td>#passenger0 &gt; .age-range.wrapper &gt; .traveler-type</td>
+<td><pre style='white-space:pre-wrap'>&lt;select id=&quot;traveler0&quot; class=&quot;traveler-type&quot;&gt;
+&lt;option value=&quot;0&quot;&gt;Adult (26+)&lt;/option&gt;
+&lt;option value=&quot;1&quot;&gt;Youth (12-25)&lt;/option&gt;
+&lt;option value=&quot;2&quot;&gt;Child (4-11)&lt;/option&gt;
+&lt;option value=&quot;3&quot;&gt;Senior (60+)&lt;/option&gt;
+&lt;/select&gt;</pre></td>
+</tr>
+</table>
+</body></html>

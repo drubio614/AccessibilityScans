@@ -104,3 +104,4 @@ C:\Users\rubi1dou\Documents\Axe-core\accessibilityscans\AccessibilityScans\obj\D
 C:\Users\rubi1dou\Documents\Axe-core\accessibilityscans\AccessibilityScans\obj\Debug\net8.0\AccessibilityScans.pdb
 C:\Users\rubi1dou\Documents\Axe-core\accessibilityscans\AccessibilityScans\obj\Debug\net8.0\AccessibilityScans.genruntimeconfig.cache
 C:\Users\rubi1dou\Documents\Axe-core\accessibilityscans\AccessibilityScans\obj\Debug\net8.0\ref\AccessibilityScans.dll
+C:\Users\rubi1dou\Documents\Axe-core\accessibilityscans\AccessibilityScans\obj\Debug\net8.0\AccessibilityScans.sourcelink.json
