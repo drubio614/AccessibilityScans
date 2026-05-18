@@ -21,6 +21,7 @@ namespace AccessibilityScans
             var options = new FirefoxOptions();
             options.AddArgument("--width=1920");
             options.AddArgument("--height=1080");
+            options.AddArgument("--headless"); // REQUIRED FOR GITHUB ACTIONS
 
             driver = new FirefoxDriver(options);
         }
@@ -64,13 +65,11 @@ namespace AccessibilityScans
             Directory.CreateDirectory(jsonDir);
             var jsonFile = Path.Combine(jsonDir, "beforepage_axe_results.json");
             File.WriteAllText(jsonFile, JsonConvert.SerializeObject(result, Formatting.Indented));
-            Console.WriteLine($"Axe JSON saved to: {jsonFile}");
 
             var htmlDir = Path.Combine(Directory.GetCurrentDirectory(), "a11y-html-reports");
             Directory.CreateDirectory(htmlDir);
             var htmlFile = Path.Combine(htmlDir, "beforepage_accessibility_report.html");
             File.WriteAllText(htmlFile, BuildHtmlReport(result, driver.Url));
-            Console.WriteLine($"Axe HTML report saved to: {htmlFile}");
 
             if (GetLength(result, "Violations") > 0)
             {

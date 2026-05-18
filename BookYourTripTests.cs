@@ -27,94 +27,44 @@ namespace AccessibilityScans
             var options = new FirefoxOptions();
             options.AddArgument("--width=1920");
             options.AddArgument("--height=1080");
+            options.AddArgument("--headless"); // REQUIRED FOR GITHUB ACTIONS
 
             driver = new FirefoxDriver(options);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-
-            Console.WriteLine("WebDriver setup complete. Browser should be open.");
         }
 
         [Test, TestCaseSource(nameof(SiteProvider))]
         public void TestBookingAndAccessibilityScan(string siteUrl)
         {
-            Console.WriteLine("Working Directory: " + Directory.GetCurrentDirectory());
-
             driver!.Navigate().GoToUrl(siteUrl);
-            Console.WriteLine("Navigated to: " + driver.Url);
 
-            try
+            dynamic result = new AxeBuilder(driver)
+                .WithTags("wcag2a", "wcag2aa", "wcag21aa")
+                .Analyze();
+
+            var jsonReportDir = Path.Combine(Directory.GetCurrentDirectory(), "target", "a11y-json-reports");
+            Directory.CreateDirectory(jsonReportDir);
+            var jsonFileName = SanitizeFileName(siteUrl) + "_axe_results.json";
+            var jsonFile = Path.Combine(jsonReportDir, jsonFileName);
+            File.WriteAllText(jsonFile, JsonConvert.SerializeObject(result, Formatting.Indented));
+
+            var htmlDir = Path.Combine(Directory.GetCurrentDirectory(), "target", "a11y-html-reports");
+            Directory.CreateDirectory(htmlDir);
+            var htmlFileName = SanitizeFileName(siteUrl) + "_accessibility_report.html";
+            var htmlFile = Path.Combine(htmlDir, htmlFileName);
+            File.WriteAllText(htmlFile, BuildHtmlReport(result, siteUrl));
+
+            if (GetLength(result, "Violations") > 0)
             {
-                Console.WriteLine("Running Axe scan...");
-
-                dynamic result = new AxeBuilder(driver)
-                    .WithTags("wcag2a", "wcag2aa", "wcag21aa")
-                    .Analyze();
-
-                Console.WriteLine($"Violations: {GetLength(result, "Violations")}");
-                Console.WriteLine($"Passes: {GetLength(result, "Passes")}");
-                Console.WriteLine($"Incomplete: {GetLength(result, "Incomplete")}");
-                Console.WriteLine($"Inapplicable: {GetLength(result, "Inapplicable")}");
-
-                foreach (var rule in ToEnumerable(result, "Violations"))
-                {
-                    Console.WriteLine("--------------------------------------------------");
-                    Console.WriteLine($"Rule: {GetPropString(rule, "Id")}");
-                    Console.WriteLine($"Impact: {GetPropString(rule, "Impact")}");
-                    Console.WriteLine($"Description: {GetPropString(rule, "Description")}");
-                    Console.WriteLine($"Help: {GetPropString(rule, "Help")} | {GetPropString(rule, "HelpUrl")}");
-                    var nodes = ToEnumerable(rule, "Nodes");
-                    Console.WriteLine($"Nodes: {GetLength(rule, "Nodes")}");
-
-                    foreach (var node in nodes)
-                    {
-                        var selector = GetSelector(node);
-                        Console.WriteLine($"  Selector: {selector}");
-                        Console.WriteLine($"  HTML: {Truncate(GetPropString(node, "Html"), 1000)}");
-                        Console.WriteLine($"  FailureSummary: {Truncate(GetFailureSummary(node), 1000)}");
-                    }
-                }
-
-                var jsonReportDir = Path.Combine(Directory.GetCurrentDirectory(), "target", "a11y-json-reports");
-                Directory.CreateDirectory(jsonReportDir);
-                var jsonFileName = SanitizeFileName(siteUrl) + "_axe_results.json";
-                var jsonFile = Path.Combine(jsonReportDir, jsonFileName);
-                File.WriteAllText(jsonFile, JsonConvert.SerializeObject(result, Formatting.Indented));
-                Console.WriteLine("Axe-core JSON results saved to: " + jsonFile);
-
-                var htmlDir = Path.Combine(Directory.GetCurrentDirectory(), "target", "a11y-html-reports");
-                Directory.CreateDirectory(htmlDir);
-                var htmlFileName = SanitizeFileName(siteUrl) + "_accessibility_report.html";
-                var htmlFile = Path.Combine(htmlDir, htmlFileName);
-                File.WriteAllText(htmlFile, BuildHtmlReport(result, siteUrl));
-                Console.WriteLine("HTML accessibility report generated at: " + htmlFile);
-
-                if (GetLength(result, "Violations") > 0)
-                {
-                    Console.WriteLine("\nAccessibility violations found.");
-                    Assert.Fail("Accessibility violations found. Check reports for details.");
-                }
-                else
-                {
-                    Console.WriteLine("\nNo accessibility violations found.");
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Exception during test: " + ex);
-                Assert.Fail("Test failed due to exception: " + ex.Message);
+                Assert.Fail("Accessibility violations found.");
             }
         }
 
         [TearDown]
         public void TearDown()
         {
-            if (driver != null)
-            {
-                Console.WriteLine("Closing browser.");
-                driver.Quit();
-                driver.Dispose();
-                driver = null;
-            }
+            driver?.Quit();
+            driver?.Dispose();
         }
 
         private static string BuildHtmlReport(dynamic result, string url)
@@ -162,12 +112,14 @@ namespace AccessibilityScans
                 var val = p.GetValue(obj);
                 return val?.ToString() ?? "";
             }
+
             var f = t.GetField(propName, BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
             if (f != null)
             {
                 var val = f.GetValue(obj);
                 return val?.ToString() ?? "";
             }
+
             return obj.ToString();
         }
 
@@ -175,11 +127,13 @@ namespace AccessibilityScans
         {
             if (node == null) return "(no selector)";
             var t = node.GetType();
+
             var targetProp = t.GetProperty("Target", BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
             if (targetProp != null)
             {
                 var targetVal = targetProp.GetValue(node);
                 if (targetVal == null) return "(no selector)";
+
                 if (targetVal is System.Collections.IEnumerable enumerable && targetVal is not string)
                 {
                     var list = new List<string>();
@@ -189,41 +143,18 @@ namespace AccessibilityScans
                     }
                     if (list.Count > 0) return string.Join(", ", list);
                 }
+
                 return targetVal.ToString() ?? "(no selector)";
             }
+
             var selectorProp = t.GetProperty("Selector", BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
             if (selectorProp != null)
             {
                 var val = selectorProp.GetValue(node);
                 return val?.ToString() ?? "(no selector)";
             }
-            return "(no selector)";
-        }
 
-        private static string GetFailureSummary(object? node)
-        {
-            if (node == null) return "";
-            var t = node.GetType();
-            string[] names = { "FailureSummary", "failureSummary", "FailureSummaryText", "Summary", "failure_summary" };
-            foreach (var name in names)
-            {
-                var p = t.GetProperty(name, BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
-                if (p != null)
-                {
-                    var val = p.GetValue(node);
-                    return val?.ToString() ?? "";
-                }
-                var f = t.GetField(name, BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
-                if (f != null)
-                {
-                    var val = f.GetValue(node);
-                    return val?.ToString() ?? "";
-                }
-            }
-            var html = GetPropString(node, "Html");
-            var any = GetPropString(node, "Any");
-            if (!string.IsNullOrEmpty(any)) return any;
-            return !string.IsNullOrEmpty(html) ? Truncate(html, 200) : "";
+            return "(no selector)";
         }
 
         private static int GetLength(object? obj, string propName)
@@ -251,13 +182,21 @@ namespace AccessibilityScans
             var t = obj.GetType();
             var p = t.GetProperty(propName, BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
             object? val = null;
-            if (p != null) val = p.GetValue(obj);
+
+            if (p != null)
+            {
+                val = p.GetValue(obj);
+            }
             else if (obj is System.Collections.IEnumerable en && obj is not string)
+            {
                 return en.Cast<object>();
+            }
 
             if (val == null) return Enumerable.Empty<object>();
             if (val is System.Collections.IEnumerable en2 && val is not string)
+            {
                 return en2.Cast<object>();
+            }
 
             return new[] { val };
         }
