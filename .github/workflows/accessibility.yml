@@ -14,10 +14,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Firefox
+      - name: Install Firefox (Mozilla binary)
         run: |
           sudo apt-get update
-          sudo apt-get install -y firefox-esr
+          sudo apt-get install -y wget
+          wget -O firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US"
+          tar -xjf firefox.tar.bz2
+          sudo mv firefox /opt/firefox
+          sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
