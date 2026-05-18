@@ -172,4 +172,4 @@ namespace AccessibilityScans
                 return val?.ToString() ?? "(no selector)";
             }
 
-            return "(no
+return "(no selector)";
