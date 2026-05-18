@@ -36,6 +36,18 @@ jobs:
       - name: Run Accessibility Scans
         run: dotnet test AccessibilityScans.csproj --logger "trx;LogFileName=accessibility-results.trx"
 
+      - name: Upload Axe JSON Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: axe-json-reports
+          path: a11y-json-reports
+
+      - name: Upload Axe HTML Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: axe-html-reports
+          path: a11y-html-reports
+
       - name: Publish Test Results
         uses: actions/upload-artifact@v4
         with:
