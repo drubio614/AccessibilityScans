@@ -141,35 +141,36 @@ namespace AccessibilityScans
             return obj.ToString();
         }
 
-        private static string GetSelector(object? node)
-        {
-            if (node == null) return "(no selector)";
-            var t = node.GetType();
+ private static string GetSelector(object? node)
+ {
+     if (node == null) return "(no selector)";
+     var t = node.GetType();
 
-            var targetProp = t.GetProperty("Target", BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
-            if (targetProp != null)
-            {
-                var targetVal = targetProp.GetValue(node);
-                if (targetVal == null) return "(no selector)";
+     var targetProp = t.GetProperty("Target", BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
+     if (targetProp != null)
+     {
+         var targetVal = targetProp.GetValue(node);
+         if (targetVal == null) return "(no selector)";
 
-                if (targetVal is System.Collections.IEnumerable enumerable && targetVal is not string)
-                {
-                    var list = new System.Collections.Generic.List<string>();
-                    foreach (var item in enumerable)
-                    {
-                        if (item != null) list.Add(item.ToString()!);
-                    }
-                    if (list.Count > 0) return string.Join(", ", list);
-                }
+         if (targetVal is System.Collections.IEnumerable enumerable && targetVal is not string)
+         {
+             var list = new System.Collections.Generic.List<string>();
+             foreach (var item in enumerable)
+             {
+                 if (item != null) list.Add(item.ToString()!);
+             }
+             if (list.Count > 0) return string.Join(", ", list);
+         }
 
-                return targetVal.ToString() ?? "(no selector)";
-            }
+         return targetVal.ToString() ?? "(no selector)";
+     }
 
-            var selectorProp = t.GetProperty("Selector", BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
-            if (selectorProp != null)
-            {
-                var val = selectorProp.GetValue(node);
-                return val?.ToString() ?? "(no selector)";
-            }
+     var selectorProp = t.GetProperty("Selector", BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
+     if (selectorProp != null)
+     {
+         var val = selectorProp.GetValue(node);
+         return val?.ToString() ?? "(no selector)";
+     }
 
-return "(no selector)";
+     return "(no selector)";
+ }
