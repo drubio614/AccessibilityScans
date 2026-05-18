@@ -14,7 +14,7 @@ namespace AccessibilityScans
     [TestFixture]
     public class BookYourTripTests
     {
-        private IWebDriver driver;
+        private IWebDriver? driver;
 
         public static IEnumerable<string> SiteProvider()
         {
@@ -37,9 +37,9 @@ namespace AccessibilityScans
         [Test, TestCaseSource(nameof(SiteProvider))]
         public void TestBookingAndAccessibilityScan(string siteUrl)
         {
-        Console.WriteLine("Working Directory: " + Directory.GetCurrentDirectory());
+            Console.WriteLine("Working Directory: " + Directory.GetCurrentDirectory());
 
-            driver.Navigate().GoToUrl(siteUrl);
+            driver!.Navigate().GoToUrl(siteUrl);
             Console.WriteLine("Navigated to: " + driver.Url);
 
             try
@@ -64,8 +64,6 @@ namespace AccessibilityScans
                     Console.WriteLine($"Help: {GetPropString(rule, "Help")} | {GetPropString(rule, "HelpUrl")}");
                     var nodes = ToEnumerable(rule, "Nodes");
                     Console.WriteLine($"Nodes: {GetLength(rule, "Nodes")}");
-
-
 
                     foreach (var node in nodes)
                     {
@@ -119,7 +117,6 @@ namespace AccessibilityScans
             }
         }
 
-        // Reuse the same helper methods as in FullPageScanTests
         private static string BuildHtmlReport(dynamic result, string url)
         {
             var sb = new System.Text.StringBuilder();
@@ -155,7 +152,7 @@ namespace AccessibilityScans
             return sb.ToString();
         }
 
-        private static string GetPropString(object obj, string propName)
+        private static string GetPropString(object? obj, string propName)
         {
             if (obj == null) return "";
             var t = obj.GetType();
@@ -174,7 +171,7 @@ namespace AccessibilityScans
             return obj.ToString();
         }
 
-        private static string GetSelector(object node)
+        private static string GetSelector(object? node)
         {
             if (node == null) return "(no selector)";
             var t = node.GetType();
@@ -183,16 +180,16 @@ namespace AccessibilityScans
             {
                 var targetVal = targetProp.GetValue(node);
                 if (targetVal == null) return "(no selector)";
-                if (targetVal is System.Collections.IEnumerable enumerable && !(targetVal is string))
+                if (targetVal is System.Collections.IEnumerable enumerable && targetVal is not string)
                 {
                     var list = new List<string>();
                     foreach (var item in enumerable)
                     {
-                        if (item != null) list.Add(item.ToString());
+                        if (item != null) list.Add(item.ToString()!);
                     }
                     if (list.Count > 0) return string.Join(", ", list);
                 }
-                return targetVal.ToString();
+                return targetVal.ToString() ?? "(no selector)";
             }
             var selectorProp = t.GetProperty("Selector", BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
             if (selectorProp != null)
@@ -203,7 +200,7 @@ namespace AccessibilityScans
             return "(no selector)";
         }
 
-        private static string GetFailureSummary(object node)
+        private static string GetFailureSummary(object? node)
         {
             if (node == null) return "";
             var t = node.GetType();
@@ -229,7 +226,7 @@ namespace AccessibilityScans
             return !string.IsNullOrEmpty(html) ? Truncate(html, 200) : "";
         }
 
-        private static int GetLength(object obj, string propName)
+        private static int GetLength(object? obj, string propName)
         {
             if (obj == null) return 0;
             var t = obj.GetType();
@@ -248,31 +245,24 @@ namespace AccessibilityScans
             return 0;
         }
 
-        private static IEnumerable<object> ToEnumerable(object obj, string propName)
+        private static IEnumerable<object> ToEnumerable(object? obj, string propName)
         {
             if (obj == null) return Enumerable.Empty<object>();
             var t = obj.GetType();
             var p = t.GetProperty(propName, BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
-            object val = null;
+            object? val = null;
             if (p != null) val = p.GetValue(obj);
-            else
-            {
-                if (obj is System.Collections.IEnumerable && !(obj is string))
-                {
-                    return ((System.Collections.IEnumerable)obj).Cast<object>();
-                }
-            }
+            else if (obj is System.Collections.IEnumerable en && obj is not string)
+                return en.Cast<object>();
 
             if (val == null) return Enumerable.Empty<object>();
-            if (val is System.Collections.IEnumerable en && !(val is string))
-            {
-                return en.Cast<object>();
-            }
+            if (val is System.Collections.IEnumerable en2 && val is not string)
+                return en2.Cast<object>();
 
             return new[] { val };
         }
 
-        private static string Truncate(string input, int maxLength)
+        private static string Truncate(string? input, int maxLength)
         {
             if (string.IsNullOrEmpty(input)) return input ?? "";
             return input.Length <= maxLength ? input : input.Substring(0, maxLength) + "...(truncated)";

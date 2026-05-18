@@ -13,7 +13,7 @@ namespace AccessibilityScans
     [TestFixture]
     public class FullPageScanTests
     {
-        private IWebDriver driver;
+        private IWebDriver? driver;
 
         [SetUp]
         public void SetUp()
@@ -28,9 +28,9 @@ namespace AccessibilityScans
         [Test]
         public void BeforePage_Should_Have_No_Accessibility_Violations()
         {
-           Console.WriteLine("Working Directory: " + Directory.GetCurrentDirectory());
+            Console.WriteLine("Working Directory: " + Directory.GetCurrentDirectory());
 
-            driver.Navigate().GoToUrl("https://projects.accesscomputing.uw.edu/au/before.html");
+            driver!.Navigate().GoToUrl("https://projects.accesscomputing.uw.edu/au/before.html");
 
             dynamic result = new AxeBuilder(driver)
                 .WithTags("wcag2a", "wcag2aa", "wcag21aa")
@@ -120,9 +120,7 @@ namespace AccessibilityScans
             return sb.ToString();
         }
 
-        // --- Helpers that tolerate different runtime shapes.,
-
-        private static string GetPropString(object obj, string propName)
+        private static string GetPropString(object? obj, string propName)
         {
             if (obj == null) return "";
             var t = obj.GetType();
@@ -133,7 +131,6 @@ namespace AccessibilityScans
                 return val?.ToString() ?? "";
             }
 
-            // Try fields
             var f = t.GetField(propName, BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
             if (f != null)
             {
@@ -141,38 +138,33 @@ namespace AccessibilityScans
                 return val?.ToString() ?? "";
             }
 
-            // Fallback to ToString
             return obj.ToString();
         }
 
-        private static string GetSelector(object node)
+        private static string GetSelector(object? node)
         {
             if (node == null) return "(no selector)";
             var t = node.GetType();
 
-            // Try property names commonly used
             var targetProp = t.GetProperty("Target", BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
             if (targetProp != null)
             {
                 var targetVal = targetProp.GetValue(node);
                 if (targetVal == null) return "(no selector)";
 
-                // If it's an array or IEnumerable<string>, join it
-                if (targetVal is System.Collections.IEnumerable enumerable && !(targetVal is string))
+                if (targetVal is System.Collections.IEnumerable enumerable && targetVal is not string)
                 {
                     var list = new System.Collections.Generic.List<string>();
                     foreach (var item in enumerable)
                     {
-                        if (item != null) list.Add(item.ToString());
+                        if (item != null) list.Add(item.ToString()!);
                     }
                     if (list.Count > 0) return string.Join(", ", list);
                 }
 
-                // Otherwise, use ToString()
-                return targetVal.ToString();
+                return targetVal.ToString() ?? "(no selector)";
             }
 
-            // Try alternative property names
             var selectorProp = t.GetProperty("Selector", BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
             if (selectorProp != null)
             {
@@ -180,87 +172,4 @@ namespace AccessibilityScans
                 return val?.ToString() ?? "(no selector)";
             }
 
-            return "(no selector)";
-        }
-
-        private static string GetFailureSummary(object node)
-        {
-            if (node == null) return "";
-            var t = node.GetType();
-
-            // Try common property names
-            string[] names = { "FailureSummary", "failureSummary", "FailureSummaryText", "Summary", "failure_summary" };
-            foreach (var name in names)
-            {
-                var p = t.GetProperty(name, BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
-                if (p != null)
-                {
-                    var val = p.GetValue(node);
-                    return val?.ToString() ?? "";
-                }
-                var f = t.GetField(name, BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
-                if (f != null)
-                {
-                    var val = f.GetValue(node);
-                    return val?.ToString() ?? "";
-                }
-            }
-
-            // Fallback: try to build a short summary from other fields
-            var html = GetPropString(node, "Html");
-            var any = GetPropString(node, "Any");
-            if (!string.IsNullOrEmpty(any)) return any;
-            return !string.IsNullOrEmpty(html) ? Truncate(html, 200) : "";
-        }
-
-        private static int GetLength(object obj, string propName)
-        {
-            if (obj == null) return 0;
-            var t = obj.GetType();
-            var p = t.GetProperty(propName, BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
-            if (p != null)
-            {
-                var val = p.GetValue(obj);
-                if (val is System.Collections.ICollection coll) return coll.Count;
-                if (val is System.Collections.IEnumerable en)
-                {
-                    int c = 0;
-                    foreach (var _ in en) c++;
-                    return c;
-                }
-            }
-            return 0;
-        }
-
-        private static System.Collections.Generic.IEnumerable<object> ToEnumerable(object obj, string propName)
-        {
-            if (obj == null) return Enumerable.Empty<object>();
-            var t = obj.GetType();
-            var p = t.GetProperty(propName, BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase);
-            object val = null;
-            if (p != null) val = p.GetValue(obj);
-            else
-            {
-                // maybe obj itself is the collection
-                if (obj is System.Collections.IEnumerable && !(obj is string))
-                {
-                    return ((System.Collections.IEnumerable)obj).Cast<object>();
-                }
-            }
-
-            if (val == null) return Enumerable.Empty<object>();
-            if (val is System.Collections.IEnumerable en && !(val is string))
-            {
-                return en.Cast<object>();
-            }
-
-            return new[] { val };
-        }
-
-        private static string Truncate(string input, int maxLength)
-        {
-            if (string.IsNullOrEmpty(input)) return input ?? "";
-            return input.Length <= maxLength ? input : input.Substring(0, maxLength) + "...(truncated)";
-        }
-    }
-}
+            return "(no
