@@ -27,16 +27,69 @@ namespace AccessibilityScans
             var options = new FirefoxOptions();
             options.AddArgument("--width=1920");
             options.AddArgument("--height=1080");
-            options.AddArgument("--headless"); // REQUIRED FOR GITHUB ACTIONS
+            // options.AddArgument("--headless"); // REQUIRED FOR GITHUB ACTIONS
 
             driver = new FirefoxDriver(options);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+        }
+
+        // ⭐ NEW: Click all buttons that may reveal dropdowns or hidden UI
+        private void ClickAllButtonsBeforeDropdowns()
+        {
+            var buttons = driver!.FindElements(By.CssSelector("button, [role='button']"));
+            foreach (var btn in buttons)
+            {
+                try
+                {
+                    ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", btn);
+                    btn.Click();
+                    System.Threading.Thread.Sleep(300);
+                }
+                catch { }
+            }
+        }
+
+        // ⭐ NEW: Expand all dropdowns on the page
+        private void ExpandAllDropdowns()
+        {
+            string[] dropdownSelectors =
+            {
+                "select",                       // HTML <select>
+                "[role='combobox']",            // ARIA combobox
+                "[aria-haspopup='listbox']",    // ARIA listbox trigger
+                "[aria-expanded='false']",      // Collapsed ARIA dropdown
+                ".dropdown-toggle",             // Bootstrap
+                ".ms-Dropdown-title",           // Fluent UI
+                ".powerapps-dropdown"           // Power Apps
+            };
+
+            foreach (var selector in dropdownSelectors)
+            {
+                var elements = driver!.FindElements(By.CssSelector(selector));
+                foreach (var el in elements)
+                {
+                    try
+                    {
+                        ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", el);
+                        el.Click();
+                        System.Threading.Thread.Sleep(500);
+                    }
+                    catch { }
+                }
+            }
         }
 
         [Test, TestCaseSource(nameof(SiteProvider))]
         public void TestBookingAndAccessibilityScan(string siteUrl)
         {
             driver!.Navigate().GoToUrl(siteUrl);
+
+            // ⭐ NEW: Interact with UI before scanning
+            ClickAllButtonsBeforeDropdowns();
+            ExpandAllDropdowns();
+
+            // Allow UI to settle
+            System.Threading.Thread.Sleep(1000);
 
             dynamic result = new AxeBuilder(driver)
                 .WithTags("wcag2a", "wcag2aa", "wcag21aa")

@@ -23,7 +23,7 @@
           ],
           "XPath": null,
           "Ancestry": null,
-          "Html": "<div class=\"html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode\" tabindex=\"\" id=\"movie_player\" data-version=\"/s/player/e1bd44b2/player_embed_es6.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
+          "Html": "<div class=\"html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode\" tabindex=\"\" id=\"movie_player\" data-version=\"/s/player/c2f7551f/player_embed_es6.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
           "Impact": "serious",
           "Any": [],
           "All": [],
@@ -1360,7 +1360,7 @@
           ],
           "XPath": null,
           "Ancestry": null,
-          "Html": "<div class=\"html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode\" tabindex=\"\" id=\"movie_player\" data-version=\"/s/player/e1bd44b2/player_embed_es6.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
+          "Html": "<div class=\"html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode\" tabindex=\"\" id=\"movie_player\" data-version=\"/s/player/c2f7551f/player_embed_es6.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
           "Impact": null,
           "Any": [],
           "All": [
@@ -1432,7 +1432,7 @@
           ],
           "XPath": null,
           "Ancestry": null,
-          "Html": "<button id=\"player-controls-a11y-toggle\" class=\"hidden-button\" aria-label=\"Hide player controls\"></button>",
+          "Html": "<button id=\"player-controls-a11y-toggle\" class=\"ytmA11yStylesHiddenButton\" aria-label=\"Hide player controls\"></button>",
           "Impact": null,
           "Any": [],
           "All": [
@@ -1666,7 +1666,7 @@
           ],
           "XPath": null,
           "Ancestry": null,
-          "Html": "<div class=\"html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode\" tabindex=\"\" id=\"movie_player\" data-version=\"/s/player/e1bd44b2/player_embed_es6.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
+          "Html": "<div class=\"html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode\" tabindex=\"\" id=\"movie_player\" data-version=\"/s/player/c2f7551f/player_embed_es6.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
           "Impact": null,
           "Any": [],
           "All": [
@@ -1708,7 +1708,7 @@
           ],
           "XPath": null,
           "Ancestry": null,
-          "Html": "<button id=\"player-controls-a11y-toggle\" class=\"hidden-button\" aria-label=\"Hide player controls\"></button>",
+          "Html": "<button id=\"player-controls-a11y-toggle\" class=\"ytmA11yStylesHiddenButton\" aria-label=\"Hide player controls\"></button>",
           "Impact": null,
           "Any": [],
           "All": [
@@ -2750,7 +2750,7 @@
           ],
           "XPath": null,
           "Ancestry": null,
-          "Html": "<button id=\"player-controls-a11y-toggle\" class=\"hidden-button\" aria-label=\"Hide player controls\"></button>",
+          "Html": "<button id=\"player-controls-a11y-toggle\" class=\"ytmA11yStylesHiddenButton\" aria-label=\"Hide player controls\"></button>",
           "Impact": null,
           "Any": [],
           "All": [],
@@ -3409,7 +3409,7 @@
           ],
           "XPath": null,
           "Ancestry": null,
-          "Html": "<div class=\"html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode\" tabindex=\"\" id=\"movie_player\" data-version=\"/s/player/e1bd44b2/player_embed_es6.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
+          "Html": "<div class=\"html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode\" tabindex=\"\" id=\"movie_player\" data-version=\"/s/player/c2f7551f/player_embed_es6.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
           "Impact": null,
           "Any": [],
           "All": [
@@ -3479,7 +3479,7 @@
           ],
           "XPath": null,
           "Ancestry": null,
-          "Html": "<button id=\"player-controls-a11y-toggle\" class=\"hidden-button\" aria-label=\"Hide player controls\"></button>",
+          "Html": "<button id=\"player-controls-a11y-toggle\" class=\"ytmA11yStylesHiddenButton\" aria-label=\"Hide player controls\"></button>",
           "Impact": null,
           "Any": [],
           "All": [
@@ -3708,7 +3708,7 @@
           ],
           "XPath": null,
           "Ancestry": null,
-          "Html": "<div class=\"html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode\" tabindex=\"\" id=\"movie_player\" data-version=\"/s/player/e1bd44b2/player_embed_es6.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
+          "Html": "<div class=\"html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode\" tabindex=\"\" id=\"movie_player\" data-version=\"/s/player/c2f7551f/player_embed_es6.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
           "Impact": null,
           "Any": [
             {
@@ -3750,7 +3750,7 @@
           ],
           "XPath": null,
           "Ancestry": null,
-          "Html": "<button id=\"player-controls-a11y-toggle\" class=\"hidden-button\" aria-label=\"Hide player controls\"></button>",
+          "Html": "<button id=\"player-controls-a11y-toggle\" class=\"ytmA11yStylesHiddenButton\" aria-label=\"Hide player controls\"></button>",
           "Impact": null,
           "Any": [
             {
@@ -4276,7 +4276,7 @@
           "Target": ".carousel > ul",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<ul style=\"margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 2800px; top: -420px;\">",
+          "Html": "<ul style=\"margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 2800px; top: -1960px;\">",
           "Impact": null,
           "Any": [],
           "All": [
@@ -4305,7 +4305,7 @@
           "None": []
         },
         {
-          "Target": ".carousel > ul > li:nth-child(4)",
+          "Target": "li:nth-child(15)",
           "XPath": null,
           "Ancestry": null,
           "Html": "<li style=\"overflow: hidden; float: none; width: 526px; height: 120px;\">",
@@ -4337,7 +4337,7 @@
           "None": []
         },
         {
-          "Target": ".carousel > ul > li:nth-child(5)",
+          "Target": "li:nth-child(16)",
           "XPath": null,
           "Ancestry": null,
           "Html": "<li style=\"overflow: hidden; float: none; width: 526px; height: 120px;\">",
@@ -4369,7 +4369,7 @@
           "None": []
         },
         {
-          "Target": ".carousel > ul > li:nth-child(6)",
+          "Target": "li:nth-child(17)",
           "XPath": null,
           "Ancestry": null,
           "Html": "<li style=\"overflow: hidden; float: none; width: 526px; height: 120px;\">",
@@ -4834,7 +4834,7 @@
           ],
           "XPath": null,
           "Ancestry": null,
-          "Html": "<button id=\"player-controls-a11y-toggle\" class=\"hidden-button\" aria-label=\"Hide player controls\"></button>",
+          "Html": "<button id=\"player-controls-a11y-toggle\" class=\"ytmA11yStylesHiddenButton\" aria-label=\"Hide player controls\"></button>",
           "Impact": null,
           "Any": [
             {
@@ -4961,6 +4961,13 @@
           "Html": "<html class=\" js no-flexbox flexb...\">",
           "Impact": null,
           "Any": [
+            {
+              "Data": null,
+              "Id": "internal-link-present",
+              "Impact": "serious",
+              "Message": "Valid skip link found",
+              "RelatedNodes": []
+            },
             {
               "Data": null,
               "Id": "header-present",
@@ -5284,16 +5291,91 @@
           "Any": [
             {
               "Data": {
-                "bgColor": "#344b6e",
-                "contrastRatio": 5.28,
+                "bgColor": "#ffffff",
+                "contrastRatio": 4.71,
                 "expectedContrastRatio": "4.5:1",
-                "fgColor": "#e7c643",
+                "fgColor": "#067ab4",
                 "fontSize": "8.3pt (11px)",
                 "fontWeight": "normal"
               },
               "Id": "color-contrast",
               "Impact": "serious",
-              "Message": "Element has sufficient color contrast of 5.28",
+              "Message": "Element has sufficient color contrast of 4.71",
+              "RelatedNodes": []
+            }
+          ],
+          "All": [],
+          "None": []
+        },
+        {
+          "Target": "a[href=\"mars2.html?a=english\"]",
+          "XPath": null,
+          "Ancestry": null,
+          "Html": "<a href=\"mars2.html?a=english\">English</a>",
+          "Impact": null,
+          "Any": [
+            {
+              "Data": {
+                "bgColor": "#ffffff",
+                "contrastRatio": 12.63,
+                "expectedContrastRatio": "4.5:1",
+                "fgColor": "#333333",
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal"
+              },
+              "Id": "color-contrast",
+              "Impact": "serious",
+              "Message": "Element has sufficient color contrast of 12.63",
+              "RelatedNodes": []
+            }
+          ],
+          "All": [],
+          "None": []
+        },
+        {
+          "Target": "a[href=\"mars2.html?a=martian\"]",
+          "XPath": null,
+          "Ancestry": null,
+          "Html": "<a href=\"mars2.html?a=martian\">Martian</a>",
+          "Impact": null,
+          "Any": [
+            {
+              "Data": {
+                "bgColor": "#ffffff",
+                "contrastRatio": 12.63,
+                "expectedContrastRatio": "4.5:1",
+                "fgColor": "#333333",
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal"
+              },
+              "Id": "color-contrast",
+              "Impact": "serious",
+              "Message": "Element has sufficient color contrast of 12.63",
+              "RelatedNodes": []
+            }
+          ],
+          "All": [],
+          "None": []
+        },
+        {
+          "Target": "a[href=\"mars2.html?a=klingon\"]",
+          "XPath": null,
+          "Ancestry": null,
+          "Html": "<a href=\"mars2.html?a=klingon\">Klingon</a>",
+          "Impact": null,
+          "Any": [
+            {
+              "Data": {
+                "bgColor": "#ffffff",
+                "contrastRatio": 12.63,
+                "expectedContrastRatio": "4.5:1",
+                "fgColor": "#333333",
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal"
+              },
+              "Id": "color-contrast",
+              "Impact": "serious",
+              "Message": "Element has sufficient color contrast of 12.63",
               "RelatedNodes": []
             }
           ],
@@ -5426,31 +5508,6 @@
           "None": []
         },
         {
-          "Target": "a[href=\"mars2.html?a=ticket_info\"] > .link-text",
-          "XPath": null,
-          "Ancestry": null,
-          "Html": "<span class=\"link-text\">Ticket Info</span>",
-          "Impact": null,
-          "Any": [
-            {
-              "Data": {
-                "bgColor": "#344b6e",
-                "contrastRatio": 5.28,
-                "expectedContrastRatio": "4.5:1",
-                "fgColor": "#e7c643",
-                "fontSize": "8.3pt (11px)",
-                "fontWeight": "normal"
-              },
-              "Id": "color-contrast",
-              "Impact": "serious",
-              "Message": "Element has sufficient color contrast of 5.28",
-              "RelatedNodes": []
-            }
-          ],
-          "All": [],
-          "None": []
-        },
-        {
           "Target": "a[href=\"mars2.html?a=last_will\"]",
           "XPath": null,
           "Ancestry": null,
@@ -5526,31 +5583,6 @@
           "None": []
         },
         {
-          "Target": "a[href=\"mars2.html?a=seek_counseling\"] > .link-text",
-          "XPath": null,
-          "Ancestry": null,
-          "Html": "<span class=\"link-text\">Seek counseling</span>",
-          "Impact": null,
-          "Any": [
-            {
-              "Data": {
-                "bgColor": "#344b6e",
-                "contrastRatio": 5.28,
-                "expectedContrastRatio": "4.5:1",
-                "fgColor": "#e7c643",
-                "fontSize": "8.3pt (11px)",
-                "fontWeight": "normal"
-              },
-              "Id": "color-contrast",
-              "Impact": "serious",
-              "Message": "Element has sufficient color contrast of 5.28",
-              "RelatedNodes": []
-            }
-          ],
-          "All": [],
-          "None": []
-        },
-        {
           "Target": ".link[href=\"mars2.html?a=\"] > .link-text",
           "XPath": null,
           "Ancestry": null,
@@ -5601,60 +5633,10 @@
           "None": []
         },
         {
-          "Target": ".link[href=\"mars2.html?a=contact_us\"] > .link-text",
+          "Target": "li:nth-child(15) > .deal-text > h3 > a[href=\"mars2.html?a=crater_adventure\"]",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<span class=\"link-text\">Contact Us</span>",
-          "Impact": null,
-          "Any": [
-            {
-              "Data": {
-                "bgColor": "#344b6e",
-                "contrastRatio": 5.28,
-                "expectedContrastRatio": "4.5:1",
-                "fgColor": "#e7c643",
-                "fontSize": "8.3pt (11px)",
-                "fontWeight": "normal"
-              },
-              "Id": "color-contrast",
-              "Impact": "serious",
-              "Message": "Element has sufficient color contrast of 5.28",
-              "RelatedNodes": []
-            }
-          ],
-          "All": [],
-          "None": []
-        },
-        {
-          "Target": ".carousel-title",
-          "XPath": null,
-          "Ancestry": null,
-          "Html": "<p class=\"carousel-title\">Special Offers</p>",
-          "Impact": null,
-          "Any": [
-            {
-              "Data": {
-                "bgColor": "#ffffff",
-                "contrastRatio": 10.43,
-                "expectedContrastRatio": "4.5:1",
-                "fgColor": "#711d56",
-                "fontSize": "9.0pt (12px)",
-                "fontWeight": "normal"
-              },
-              "Id": "color-contrast",
-              "Impact": "serious",
-              "Message": "Element has sufficient color contrast of 10.43",
-              "RelatedNodes": []
-            }
-          ],
-          "All": [],
-          "None": []
-        },
-        {
-          "Target": "li:nth-child(4) > .deal-text > h3 > a[href=\"mars2.html?a=send_kids_to_mars\"]",
-          "XPath": null,
-          "Ancestry": null,
-          "Html": "<a class=\"\" href=\"mars2.html?a=send_kids_to_mars\">Send Your Kids to Mars!</a>",
+          "Html": "<a class=\"\" href=\"mars2.html?a=crater_adventure\">10% off Crater Adventure</a>",
           "Impact": null,
           "Any": [
             {
@@ -5676,10 +5658,10 @@
           "None": []
         },
         {
-          "Target": "li:nth-child(4) > .deal-text > p",
+          "Target": "li:nth-child(15) > .deal-text > p",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<p>Book a first class one-way ticket for 5 kids, at the cost of 4! No parent or guardian required. Don't worry, they'll be fine... <a class=\"link-arrow\" href=\"mars2.html?a=send_kids_to_mars\">Send your kids to mars</a></p>",
+          "Html": "<p>Book select MarStar Crater tickets and enjoy 10% off the Crater Adventures Pass. Safety not guaranteed. <a href=\"mars2.html?a=crater_adventure\">Book your MarStar Crater Package today to save!</a></p>",
           "Impact": null,
           "Any": [
             {
@@ -5701,10 +5683,10 @@
           "None": []
         },
         {
-          "Target": "li:nth-child(4) > .deal-text > p > .link-arrow[href=\"mars2.html?a=send_kids_to_mars\"]",
+          "Target": "li:nth-child(15) > .deal-text > p > a[href=\"mars2.html?a=crater_adventure\"]",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<a class=\"link-arrow\" href=\"mars2.html?a=send_kids_to_mars\">Send your kids to mars</a>",
+          "Html": "<a href=\"mars2.html?a=crater_adventure\">Book your MarStar Crater Package today to save!</a>",
           "Impact": null,
           "Any": [
             {
@@ -5726,10 +5708,10 @@
           "None": []
         },
         {
-          "Target": "li:nth-child(5) > .deal-text > h3 > a[href=\"mars2.html?a=wookie\"]",
+          "Target": "li:nth-child(16) > .deal-text > h3 > a[href=\"mars2.html?a=ice_cream\"]",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<a class=\"\" href=\"mars2.html?a=wookie\">Fly with a Wookie</a>",
+          "Html": "<a class=\"\" href=\"mars2.html?a=ice_cream\">Free Astronaut Ice Cream</a>",
           "Impact": null,
           "Any": [
             {
@@ -5751,10 +5733,10 @@
           "None": []
         },
         {
-          "Target": "li:nth-child(5) > .deal-text > p",
+          "Target": "li:nth-child(16) > .deal-text > p",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<p>Fly with a wookie! Limited time offer! Or would you rather kiss a Wookie? We can arrange that. (Can someone move this walking carpet out of my way?) <a class=\"link-arrow\" href=\"mars2.html?a=wookie\">Fly with a Wookie!</a></p>",
+          "Html": "<p>Spend an extra 3 months in orbit around Mars in our newly-remodelled MarsPod and get a free package of freeze-wrapped dehydrated astronaut ice cream. <a class=\"link-arrow\" href=\"mars2.html?a=ice_cream\">Get your free dehydrated ice cream!</a>\n</p>",
           "Impact": null,
           "Any": [
             {
@@ -5776,10 +5758,10 @@
           "None": []
         },
         {
-          "Target": "li:nth-child(5) > .deal-text > p > .link-arrow[href=\"mars2.html?a=wookie\"]",
+          "Target": "li:nth-child(16) > .deal-text > p > .link-arrow[href=\"mars2.html?a=ice_cream\"]",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<a class=\"link-arrow\" href=\"mars2.html?a=wookie\">Fly with a Wookie!</a>",
+          "Html": "<a class=\"link-arrow\" href=\"mars2.html?a=ice_cream\">Get your free dehydrated ice cream!</a>",
           "Impact": null,
           "Any": [
             {
@@ -5801,10 +5783,10 @@
           "None": []
         },
         {
-          "Target": "li:nth-child(6) > .deal-text > h3 > a[href=\"mars2.html?a=stay_connected\"]",
+          "Target": "li:nth-child(17) > .deal-text > h3 > .link",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<a class=\"\" href=\"mars2.html?a=stay_connected\">Get Radio on Uranus</a>",
+          "Html": "<a class=\"link\" href=\"mars2.html?a=low_price_guarantee\">Lowest Price Guarantee</a>",
           "Impact": null,
           "Any": [
             {
@@ -5826,10 +5808,10 @@
           "None": []
         },
         {
-          "Target": "li:nth-child(6) > .deal-text > p",
+          "Target": "li:nth-child(17) > .deal-text > p:nth-child(2)",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<p>All of our packages come with radio connectivity to the far reaches of the solar system. Yup, you too can get Justin Bieber on Uranus. <a href=\"mars2.html?a=stay_connected\">Find out about radio connectivity today.</a></p>",
+          "Html": "<p>If within 24 hours of booking with us you find a lower online published price for the exact same rocket ticket to Mars, we buy you a milkshake, then send you on a one-way trip to the Sun. <a href=\"mars2.html?a=low_price_guarantee\">Find out how this deal works.</a> </p>",
           "Impact": null,
           "Any": [
             {
@@ -5851,10 +5833,10 @@
           "None": []
         },
         {
-          "Target": "li:nth-child(6) > .deal-text > p > a[href=\"mars2.html?a=stay_connected\"]",
+          "Target": "li:nth-child(17) > .deal-text > p:nth-child(2) > a",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<a href=\"mars2.html?a=stay_connected\">Find out about radio connectivity today.</a>",
+          "Html": "<a href=\"mars2.html?a=low_price_guarantee\">Find out how this deal works.</a>",
           "Impact": null,
           "Any": [
             {
@@ -8855,10 +8837,10 @@
       ],
       "Nodes": [
         {
-          "Target": "li:nth-child(4) > .deal-text > p > .link-arrow[href=\"mars2.html?a=send_kids_to_mars\"]",
+          "Target": "li:nth-child(15) > .deal-text > p > a[href=\"mars2.html?a=crater_adventure\"]",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<a class=\"link-arrow\" href=\"mars2.html?a=send_kids_to_mars\">Send your kids to mars</a>",
+          "Html": "<a href=\"mars2.html?a=crater_adventure\">Book your MarStar Crater Package today to save!</a>",
           "Impact": null,
           "Any": [
             {
@@ -8868,8 +8850,8 @@
               "Message": "Links can be distinguished from surrounding text in some way other than by color",
               "RelatedNodes": [
                 {
-                  "Html": "<p>Book a first class one-way ticket for 5 kids, at the cost of 4! No parent or guardian required. Don't worry, they'll be fine... <a class=\"link-arrow\" href=\"mars2.html?a=send_kids_to_mars\">Send your kids to mars</a></p>",
-                  "Target": "li:nth-child(4) > .deal-text > p"
+                  "Html": "<p>Book select MarStar Crater tickets and enjoy 10% off the Crater Adventures Pass. Safety not guaranteed. <a href=\"mars2.html?a=crater_adventure\">Book your MarStar Crater Package today to save!</a></p>",
+                  "Target": "li:nth-child(15) > .deal-text > p"
                 }
               ]
             }
@@ -8878,10 +8860,10 @@
           "None": []
         },
         {
-          "Target": "li:nth-child(5) > .deal-text > p > .link-arrow[href=\"mars2.html?a=wookie\"]",
+          "Target": "li:nth-child(16) > .deal-text > p > .link-arrow[href=\"mars2.html?a=ice_cream\"]",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<a class=\"link-arrow\" href=\"mars2.html?a=wookie\">Fly with a Wookie!</a>",
+          "Html": "<a class=\"link-arrow\" href=\"mars2.html?a=ice_cream\">Get your free dehydrated ice cream!</a>",
           "Impact": null,
           "Any": [
             {
@@ -8891,8 +8873,8 @@
               "Message": "Links can be distinguished from surrounding text in some way other than by color",
               "RelatedNodes": [
                 {
-                  "Html": "<p>Fly with a wookie! Limited time offer! Or would you rather kiss a Wookie? We can arrange that. (Can someone move this walking carpet out of my way?) <a class=\"link-arrow\" href=\"mars2.html?a=wookie\">Fly with a Wookie!</a></p>",
-                  "Target": "li:nth-child(5) > .deal-text > p"
+                  "Html": "<p>Spend an extra 3 months in orbit around Mars in our newly-remodelled MarsPod and get a free package of freeze-wrapped dehydrated astronaut ice cream. <a class=\"link-arrow\" href=\"mars2.html?a=ice_cream\">Get your free dehydrated ice cream!</a>\n</p>",
+                  "Target": "li:nth-child(16) > .deal-text > p"
                 }
               ]
             }
@@ -8901,10 +8883,10 @@
           "None": []
         },
         {
-          "Target": "li:nth-child(6) > .deal-text > p > a[href=\"mars2.html?a=stay_connected\"]",
+          "Target": "li:nth-child(17) > .deal-text > p:nth-child(2) > a",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<a href=\"mars2.html?a=stay_connected\">Find out about radio connectivity today.</a>",
+          "Html": "<a href=\"mars2.html?a=low_price_guarantee\">Find out how this deal works.</a>",
           "Impact": null,
           "Any": [
             {
@@ -8914,8 +8896,8 @@
               "Message": "Links can be distinguished from surrounding text in some way other than by color",
               "RelatedNodes": [
                 {
-                  "Html": "<p>All of our packages come with radio connectivity to the far reaches of the solar system. Yup, you too can get Justin Bieber on Uranus. <a href=\"mars2.html?a=stay_connected\">Find out about radio connectivity today.</a></p>",
-                  "Target": "li:nth-child(6) > .deal-text > p"
+                  "Html": "<p>If within 24 hours of booking with us you find a lower online published price for the exact same rocket ticket to Mars, we buy you a milkshake, then send you on a one-way trip to the Sun. <a href=\"mars2.html?a=low_price_guarantee\">Find out how this deal works.</a> </p>",
+                  "Target": "li:nth-child(17) > .deal-text > p:nth-child(2)"
                 }
               ]
             }
@@ -9161,6 +9143,84 @@
           "XPath": null,
           "Ancestry": null,
           "Html": "<a href=\"javascript:;\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\nYour language<i class=\"icon-langbar-down-arrow\"></i>\n</a>",
+          "Impact": null,
+          "Any": [
+            {
+              "Data": null,
+              "Id": "has-visible-text",
+              "Impact": "serious",
+              "Message": "Element has text that is visible to screen readers",
+              "RelatedNodes": []
+            }
+          ],
+          "All": [],
+          "None": [
+            {
+              "Data": null,
+              "Id": "focusable-no-name",
+              "Impact": "serious",
+              "Message": "Element is not in tab order or has accessible text",
+              "RelatedNodes": []
+            }
+          ]
+        },
+        {
+          "Target": "a[href=\"mars2.html?a=english\"]",
+          "XPath": null,
+          "Ancestry": null,
+          "Html": "<a href=\"mars2.html?a=english\">English</a>",
+          "Impact": null,
+          "Any": [
+            {
+              "Data": null,
+              "Id": "has-visible-text",
+              "Impact": "serious",
+              "Message": "Element has text that is visible to screen readers",
+              "RelatedNodes": []
+            }
+          ],
+          "All": [],
+          "None": [
+            {
+              "Data": null,
+              "Id": "focusable-no-name",
+              "Impact": "serious",
+              "Message": "Element is not in tab order or has accessible text",
+              "RelatedNodes": []
+            }
+          ]
+        },
+        {
+          "Target": "a[href=\"mars2.html?a=martian\"]",
+          "XPath": null,
+          "Ancestry": null,
+          "Html": "<a href=\"mars2.html?a=martian\">Martian</a>",
+          "Impact": null,
+          "Any": [
+            {
+              "Data": null,
+              "Id": "has-visible-text",
+              "Impact": "serious",
+              "Message": "Element has text that is visible to screen readers",
+              "RelatedNodes": []
+            }
+          ],
+          "All": [],
+          "None": [
+            {
+              "Data": null,
+              "Id": "focusable-no-name",
+              "Impact": "serious",
+              "Message": "Element is not in tab order or has accessible text",
+              "RelatedNodes": []
+            }
+          ]
+        },
+        {
+          "Target": "a[href=\"mars2.html?a=klingon\"]",
+          "XPath": null,
+          "Ancestry": null,
+          "Html": "<a href=\"mars2.html?a=klingon\">Klingon</a>",
           "Impact": null,
           "Any": [
             {
@@ -10405,7 +10465,7 @@
           ]
         },
         {
-          "Target": "li:nth-child(10) > a",
+          "Target": ".carousel > ul > li:nth-child(10) > a",
           "XPath": null,
           "Ancestry": null,
           "Html": "<a href=\"mars2.html?a=low_price_guarantee\"><img src=\"/assets/demo-sites/mars/images/mars-lander.jpg\" class=\"\" width=\"210\" height=\"120\" alt=\"Mars Lander\"></a>",
@@ -12577,6 +12637,24 @@
           ]
         },
         {
+          "Target": ".language-select > .dropdown-menu",
+          "XPath": null,
+          "Ancestry": null,
+          "Html": "<ul class=\"dropdown-menu\">\n        <li><a href=\"mars2.html?a=english\">English</a></li>\n         <li><a href=\"mars2.html?a=martian\">Martian</a></li>\n         <li><a href=\"mars2.html?a=klingon\">Klingon</a></li>\n</ul>",
+          "Impact": null,
+          "Any": [],
+          "All": [],
+          "None": [
+            {
+              "Data": null,
+              "Id": "only-listitems",
+              "Impact": "serious",
+              "Message": "List element only has direct children that are allowed inside <li> elements",
+              "RelatedNodes": []
+            }
+          ]
+        },
+        {
           "Target": "#main-nav > ul",
           "XPath": null,
           "Ancestry": null,
@@ -12670,7 +12748,7 @@
           "Target": ".carousel > ul",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<ul style=\"margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 2800px; top: -420px;\">",
+          "Html": "<ul style=\"margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 2800px; top: -1960px;\">",
           "Impact": null,
           "Any": [],
           "All": [],
@@ -12922,7 +13000,7 @@
           "Target": "#country-select",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<li id=\"country-select\" class=\"dropdown\">\n\n<a href=\"javascript:;\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\nYour country<span class=\"currency-select\"><!--($USD)--></span>\n<i class=\"icon-langbar-down-arrow\"></i>\n</a><ul class=\"dropdown-menu\"></ul>\n</li>",
+          "Html": "<li id=\"country-select\" class=\"dropdown\">",
           "Impact": null,
           "Any": [
             {
@@ -12940,7 +13018,61 @@
           "Target": ".language-select",
           "XPath": null,
           "Ancestry": null,
-          "Html": "<li class=\"language-select dropdown\">",
+          "Html": "<li class=\"language-select dropdown open\">",
+          "Impact": null,
+          "Any": [
+            {
+              "Data": null,
+              "Id": "listitem",
+              "Impact": "serious",
+              "Message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+              "RelatedNodes": []
+            }
+          ],
+          "All": [],
+          "None": []
+        },
+        {
+          "Target": ".language-select > .dropdown-menu > li:nth-child(1)",
+          "XPath": null,
+          "Ancestry": null,
+          "Html": "<li><a href=\"mars2.html?a=english\">English</a></li>",
+          "Impact": null,
+          "Any": [
+            {
+              "Data": null,
+              "Id": "listitem",
+              "Impact": "serious",
+              "Message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+              "RelatedNodes": []
+            }
+          ],
+          "All": [],
+          "None": []
+        },
+        {
+          "Target": ".language-select > .dropdown-menu > li:nth-child(2)",
+          "XPath": null,
+          "Ancestry": null,
+          "Html": "<li><a href=\"mars2.html?a=martian\">Martian</a></li>",
+          "Impact": null,
+          "Any": [
+            {
+              "Data": null,
+              "Id": "listitem",
+              "Impact": "serious",
+              "Message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+              "RelatedNodes": []
+            }
+          ],
+          "All": [],
+          "None": []
+        },
+        {
+          "Target": ".language-select > .dropdown-menu > li:nth-child(3)",
+          "XPath": null,
+          "Ancestry": null,
+          "Html": "<li><a href=\"mars2.html?a=klingon\">Klingon</a></li>",
           "Impact": null,
           "Any": [
             {
@@ -13423,7 +13555,7 @@
           "None": []
         },
         {
-          "Target": "li:nth-child(8)",
+          "Target": ".carousel > ul > li:nth-child(8)",
           "XPath": null,
           "Ancestry": null,
           "Html": "<li style=\"overflow: hidden; float: none; width: 526px; height: 120px;\">",
@@ -13441,7 +13573,7 @@
           "None": []
         },
         {
-          "Target": "li:nth-child(9)",
+          "Target": ".carousel > ul > li:nth-child(9)",
           "XPath": null,
           "Ancestry": null,
           "Html": "<li style=\"overflow: hidden; float: none; width: 526px; height: 120px;\">",
@@ -13459,7 +13591,7 @@
           "None": []
         },
         {
-          "Target": "li:nth-child(10)",
+          "Target": ".carousel > ul > li:nth-child(10)",
           "XPath": null,
           "Ancestry": null,
           "Html": "<li style=\"overflow: hidden; float: none; width: 526px; height: 120px;\">",
@@ -13477,7 +13609,7 @@
           "None": []
         },
         {
-          "Target": "li:nth-child(11)",
+          "Target": ".carousel > ul > li:nth-child(11)",
           "XPath": null,
           "Ancestry": null,
           "Html": "<li style=\"overflow: hidden; float: none; width: 526px; height: 120px;\">",
@@ -15559,7 +15691,7 @@
           ],
           "XPath": null,
           "Ancestry": null,
-          "Html": "<button id=\"player-controls-a11y-toggle\" class=\"hidden-button\" aria-label=\"Hide player controls\"></button>",
+          "Html": "<button id=\"player-controls-a11y-toggle\" class=\"ytmA11yStylesHiddenButton\" aria-label=\"Hide player controls\"></button>",
           "Impact": null,
           "Any": [
             {
@@ -16746,17 +16878,12 @@
                 "expectedContrastRatio": "4.5:1",
                 "fontSize": "8.3pt (11px)",
                 "fontWeight": "normal",
-                "messageKey": "bgGradient"
+                "messageKey": "bgOverlap"
               },
               "Id": "color-contrast",
               "Impact": "serious",
-              "Message": "Element's background color could not be determined due to a background gradient",
-              "RelatedNodes": [
-                {
-                  "Html": "<div id=\"menu-panel\" class=\"container\">",
-                  "Target": "#menu-panel"
-                }
-              ]
+              "Message": "Element's background color could not be determined because it is overlapped by another element",
+              "RelatedNodes": []
             }
           ],
           "All": [],
@@ -16775,17 +16902,108 @@
                 "expectedContrastRatio": "4.5:1",
                 "fontSize": "8.3pt (11px)",
                 "fontWeight": "normal",
-                "messageKey": "bgGradient"
+                "messageKey": "bgOverlap"
               },
               "Id": "color-contrast",
               "Impact": "serious",
-              "Message": "Element's background color could not be determined due to a background gradient",
-              "RelatedNodes": [
-                {
-                  "Html": "<div id=\"menu-panel\" class=\"container\">",
-                  "Target": "#menu-panel"
-                }
-              ]
+              "Message": "Element's background color could not be determined because it is overlapped by another element",
+              "RelatedNodes": []
+            }
+          ],
+          "All": [],
+          "None": []
+        },
+        {
+          "Target": "a[href=\"mars2.html?a=ticket_info\"] > .link-text",
+          "XPath": null,
+          "Ancestry": null,
+          "Html": "<span class=\"link-text\">Ticket Info</span>",
+          "Impact": "serious",
+          "Any": [
+            {
+              "Data": {
+                "contrastRatio": 0,
+                "expectedContrastRatio": "4.5:1",
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap"
+              },
+              "Id": "color-contrast",
+              "Impact": "serious",
+              "Message": "Element's background color could not be determined because it is overlapped by another element",
+              "RelatedNodes": []
+            }
+          ],
+          "All": [],
+          "None": []
+        },
+        {
+          "Target": "a[href=\"mars2.html?a=seek_counseling\"] > .link-text",
+          "XPath": null,
+          "Ancestry": null,
+          "Html": "<span class=\"link-text\">Seek counseling</span>",
+          "Impact": "serious",
+          "Any": [
+            {
+              "Data": {
+                "contrastRatio": 0,
+                "expectedContrastRatio": "4.5:1",
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap"
+              },
+              "Id": "color-contrast",
+              "Impact": "serious",
+              "Message": "Element's background color could not be determined because it is overlapped by another element",
+              "RelatedNodes": []
+            }
+          ],
+          "All": [],
+          "None": []
+        },
+        {
+          "Target": ".link[href=\"mars2.html?a=contact_us\"] > .link-text",
+          "XPath": null,
+          "Ancestry": null,
+          "Html": "<span class=\"link-text\">Contact Us</span>",
+          "Impact": "serious",
+          "Any": [
+            {
+              "Data": {
+                "contrastRatio": 0,
+                "expectedContrastRatio": "4.5:1",
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap"
+              },
+              "Id": "color-contrast",
+              "Impact": "serious",
+              "Message": "Element's background color could not be determined because it is overlapped by another element",
+              "RelatedNodes": []
+            }
+          ],
+          "All": [],
+          "None": []
+        },
+        {
+          "Target": ".carousel-title",
+          "XPath": null,
+          "Ancestry": null,
+          "Html": "<p class=\"carousel-title\">Special Offers</p>",
+          "Impact": "serious",
+          "Any": [
+            {
+              "Data": {
+                "contrastRatio": 0,
+                "expectedContrastRatio": "4.5:1",
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap"
+              },
+              "Id": "color-contrast",
+              "Impact": "serious",
+              "Message": "Element's background color could not be determined because it is overlapped by another element",
+              "RelatedNodes": []
             }
           ],
           "All": [],
@@ -18966,11 +19184,11 @@
       ]
     }
   ],
-  "Timestamp": "2026-05-18T19:22:46.436+00:00",
+  "Timestamp": "2026-05-21T19:21:26.673+00:00",
   "TestEnvironment": {
     "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0",
-    "WindowWidth": 1920,
-    "WindowHeight": 995,
+    "WindowWidth": 1904,
+    "WindowHeight": 939,
     "OrientationType": "landscape-primary",
     "OrientationAngle": 0.0
   },
